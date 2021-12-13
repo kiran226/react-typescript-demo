@@ -33,7 +33,7 @@ function App() {
   return (
     <div className="App">
       OM Namah Sivayah
-      <Greet name='Kiran' messageCount={10} isloggedin={false} />
+      <Greet name='Kiran' messageCount={10} isloggedin={true} />
       <Person name={personName} />
       <PersonList names={nameList} />
       <Status status="success" />
@@ -43,6 +43,9 @@ function App() {
       <Oscar>
         <Heading>Oscar Award goes to Kiran Gandikota</Heading>
       </Oscar>
+
+      <Greet name='Kiran'  isloggedin={true} />
+
     </div>
   );
 }
