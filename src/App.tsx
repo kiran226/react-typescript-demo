@@ -48,11 +48,14 @@ function App() {
 
       <Greet name='Kiran'  isloggedin={true} />
 
-      <Button handleClick={(event,id)=>{
+      <Button 
+        handleClick={(event,id)=>{
         console.log("Button Clicked", event, id ) 
       }} />
 
-      <Input  value='' handleChange={ event => console.log(event)}/>
+      <Input  
+        value='' 
+        handleChange={ event => console.log(event)}/>
 
     </div>
   );
