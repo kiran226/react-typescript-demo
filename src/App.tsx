@@ -34,7 +34,7 @@ function App() {
       <Greet name='Kiran' messageCount={10} isloggedin={false} />
       <Person name={personName} />
       <PersonList names={nameList} />
-      <Status status="error" />
+      <Status status="success" />
     </div>
   );
 }
