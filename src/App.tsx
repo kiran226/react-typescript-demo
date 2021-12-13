@@ -4,6 +4,7 @@ import { Button } from './components/Button';
 import { Container } from './components/Container';
 import { Box } from './components/context/Box';
 import { ThemeContextProvider } from './components/context/ThemeContext';
+import { UserContextProvider } from './components/context/UserContext';
 import { Greet } from './components/Greet';
 import { Heading } from './components/Heading';
 import { Input } from './components/Input';
@@ -13,6 +14,7 @@ import { PersonList } from './components/PersonList';
 import { Counter } from './components/state/Counter';
 import { Loggedin } from './components/state/Loggedin';
 import { User } from './components/state/User';
+import { UserDetails } from './components/context/User'
 import { Status } from './components/Status';
 
 function App() {
@@ -75,6 +77,10 @@ function App() {
         <ThemeContextProvider>
           <Box />
         </ThemeContextProvider>
+
+        <UserContextProvider>
+          <UserDetails />
+        </UserContextProvider>
 
     </div>
   );
