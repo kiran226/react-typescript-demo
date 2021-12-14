@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 
-type CounterProps={
-    message:string
-}
+// type CounterProps={
+//     message:string
+// }
 
 type CounterState={
     count: number
 }
 
-export class CounterValue extends Component<CounterProps , CounterState> {
+export class CounterValue extends Component<{} , CounterState> {
     state ={
         count :0
     }
@@ -20,7 +20,7 @@ export class CounterValue extends Component<CounterProps , CounterState> {
         return (
             <div>
                 <button onClick={this.handleClick} >Increment</button>
-                {this.props.message} {this.state.count}
+                 {this.state.count}
             </div>
         )
     }

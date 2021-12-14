@@ -88,7 +88,7 @@ function App() {
         <DomRef />
         <MutableRef/>
 
-        <CounterValue message="The count is"/>
+        <CounterValue />
 
       
 
