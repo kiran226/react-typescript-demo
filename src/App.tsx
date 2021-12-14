@@ -19,6 +19,8 @@ import { Status } from './components/Status';
 import { DomRef } from './components/ref/DomRef';
 import { MutableRef } from './components/ref/MutableRef';
 import { CounterValue } from './components/class/CounterValue';
+import { Private } from './components/auth/Private';
+import { Profile } from './components/auth/Profile';
 
 function App() {
 
@@ -89,6 +91,8 @@ function App() {
         <MutableRef/>
 
         <CounterValue />
+
+        <Private isloggedin={true} component={Profile}/>
 
       
 
