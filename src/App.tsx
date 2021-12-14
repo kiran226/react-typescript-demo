@@ -18,6 +18,7 @@ import { UserDetails } from './components/context/User'
 import { Status } from './components/Status';
 import { DomRef } from './components/ref/DomRef';
 import { MutableRef } from './components/ref/MutableRef';
+import { CounterValue } from './components/class/CounterValue';
 
 function App() {
 
@@ -86,6 +87,10 @@ function App() {
 
         <DomRef />
         <MutableRef/>
+
+        <CounterValue message="The count is"/>
+
+      
 
     </div>
   );
