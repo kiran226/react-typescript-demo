@@ -16,6 +16,8 @@ import { Loggedin } from './components/state/Loggedin';
 import { User } from './components/state/User';
 import { UserDetails } from './components/context/User'
 import { Status } from './components/Status';
+import { DomRef } from './components/ref/DomRef';
+import { MutableRef } from './components/ref/MutableRef';
 
 function App() {
 
@@ -81,6 +83,9 @@ function App() {
         <UserContextProvider>
           <UserDetails />
         </UserContextProvider>
+
+        <DomRef />
+        <MutableRef/>
 
     </div>
   );
